@@ -1,14 +1,15 @@
+
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
-
+//input method
 void Inp(char *c)
 {
 	scanf("%s", c);
 	while(strcmpi(c,"") == 0)
 		scanf("%s",c);
 }
-
+//divide method
 void div()
 {
 	int a, b;
@@ -23,7 +24,7 @@ void div()
 		printf("Result: error");
 	}
 }
-
+//square root method
 void sqrt()
 {
 	int n;
@@ -37,7 +38,7 @@ void sqrt()
 		printf("Result: error");
 	}
 }
-
+//sum of odd numbers method
 void sln()
 {
 	int n, i;
@@ -50,7 +51,7 @@ void sln()
 	}
 	printf("Result: %d", sum);
 }
-
+//combination method
 void cnk()
 {
 	int n, k;
@@ -82,7 +83,7 @@ void cnk()
 		printf("Result: %.2f", kq);
 	}
 }
-
+//sum of numbers entered method
 void tk()
 {
 	int n, sum = 0;
@@ -92,7 +93,7 @@ void tk()
 	}while(n != 0);
 	printf("Result: %d", sum);
 }
-
+//average method
 void tbc()
 {
 	int n, sum = 0, count = -1;
@@ -111,7 +112,7 @@ void tbc()
 		printf("Result: %.2f", (float)sum/(float)count);
 	}
 }
-
+//Find the largest number method
 void max()
 {
 	int n, max = 0;
@@ -128,10 +129,10 @@ void max()
 int main()
 {
 	char c[10];
-	printf("Nhap: ");
+	printf("Enter your ope: ");
 	Inp(c);
 	int a, b;	
-	if	   (strcmpi(c, "+")   == 0){scanf("%d%d",&a,&b); printf("Result: %d",a + b);}
+	if     (strcmpi(c, "+")   == 0){scanf("%d%d",&a,&b); printf("Result: %d",a + b);}
 	else if(strcmpi(c, "-")   == 0){scanf("%d%d",&a,&b); printf("Result: %d",a - b);}
 	else if(strcmpi(c, "*")   == 0){scanf("%d%d",&a,&b); printf("Result: %d",a * b);}
 	else if(strcmpi(c, "/")   == 0){div();}
