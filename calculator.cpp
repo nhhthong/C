@@ -1,4 +1,13 @@
-
+/*
+Hello,
+This is my basic Calculator 
+---------------------------
+Input: + 2 3
+Output: 5
+---------------------------
+Input: tbc 1 2 3 1 3 0
+Output: 2
+*/
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
@@ -93,7 +102,7 @@ void tk()
 	}while(n != 0);
 	printf("Result: %d", sum);
 }
-//average method
+//average of numbers entered method
 void tbc()
 {
 	int n, sum = 0, count = -1;
